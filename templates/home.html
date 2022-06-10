@@ -1,0 +1,8 @@
+{% extends 'layout.html' %}
+{% block content %}
+    {% for employee in schedule %}
+        <h1> {{ employee.name }} </h1>
+        <p> Shift: {{ employee.shift }} </p>
+        <p> Working on {{ employee.days }} days in the week of {{ employee.week }} </p>
+    {% endfor %}
+{% endblock content %}
